@@ -51,7 +51,8 @@ else{
             include ("veiws/404.php");
         } 
         $PAGE = ob_get_clean();
-        echo $MINIFY->min($PAGE);
+        //echo $MINIFY->min($PAGE);
+        echo $PAGE;
     }else{
         echo 'open terminal and run ( php cli --config ) to configure php CLI';
     }
